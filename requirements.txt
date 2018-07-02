@@ -1,0 +1,4 @@
+requests
+pandas
+geopy
+python-telegram-bot
