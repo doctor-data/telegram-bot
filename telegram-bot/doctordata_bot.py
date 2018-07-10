@@ -9,16 +9,16 @@ from geopy.distance import great_circle
 import yaml
 
 SESSION_ID = random.randint(0,1000000)
-TOKEN = "BOT TOKEN"
+TOKEN = os.getenv('BOT_TOKEN',"")
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 DDURL = "https://medialab-prado.github.io/doctordata/telegram-map.html"
 
 pwd = os.getcwd()
 #pwd = '/Volumes/MacintoshHD/_GitHub/doctordata'
-cwd = pwd + '/api/csv/'
-jwd = pwd + '/api/json/'
-bwd = pwd + '/bot/'
-dwd = pwd + '/api/data/'
+cwd = pwd + '/telegram-bot/csv/'
+jwd = pwd + '/telegram-bot/json/'
+bwd = pwd + '/telegram-bot/'
+dwd = pwd + '/telegram-bot/data/'
 
 #bwd = '/Volumes/MacintoshHD/_GitHub/doctordata/bot/'
 os.chdir(dwd)
