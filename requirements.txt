@@ -1,4 +1,5 @@
 requests
 pandas
 geopy
+pyyaml
 python-telegram-bot
